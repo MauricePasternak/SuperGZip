@@ -3,6 +3,7 @@ import argparse
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from shutil import copyfileobj
+from sys import exit
 
 
 def base_file_gunzip(orig_path: Path, unzip: bool = False, retain_original: bool = False, verbose: bool = False):
