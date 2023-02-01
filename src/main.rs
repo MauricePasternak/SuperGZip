@@ -182,7 +182,7 @@ async fn _wrapper(
                 gzip(&path, keep_original).await
             } else {
                 if verbose {
-                    println!("Deompressing {}", path.to_string_lossy());
+                    println!("Decompressing {}", path.to_string_lossy());
                 }
                 unzip(&path, keep_original).await
             };
